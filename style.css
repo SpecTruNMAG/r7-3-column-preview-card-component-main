@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+    /*## Colors
+    ### Primary*/
+    --primary-one: hsl(31, 77%, 52%);
+    --primary-second: hsl(184, 100%, 22%);
+    --primary-third: hsl(179, 100%, 13%);
+    /*### Neutral*/
+    --neutral-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --neutral-background: hsl(0, 0%, 95%);
+    --neutral-headings: hsl(0, 0%, 95%);
+    --neutral-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.group-card {
+    margin: 8.7rem 2.3rem 8.7rem 2.3rem;
+    border-radius: 1rem;
+}
+
+.card {
+    padding: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.8rem;
+    width: 32.5rem;
+    height: 44rem;
+}
+
+.card-title {
+    color: var(--neutral-headings);
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.card-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--neutral-paragraphs);
+    line-height: 2.5rem;
+}
+
+.card-button {
+    font-family: "Lexend Deca", sans-serif;
+    border: none;
+    padding: 1.5rem;
+    width: 14rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--neutral-buttons);
+}
+
+.card-sedans {
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--primary-one);
+}
+
+.card-sedans-button {
+    color: var(--primary-one);
+}
+
+.card-suvs {
+    background-color: var(--primary-second);
+}
+
+.card-suvs-button {
+    color: var(--primary-second);
+}
+
+.card-luxury {
+    background-color: var(--primary-third);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card-luxury-button {
+    color: var(--primary-third);
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .group-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        height: 50rem;
+    }
+
+    .card-button {
+        margin: 5rem 0 2rem 0;
+    }
+
+    .card-sedans {
+        border-radius: 1rem 0rem 0 1rem;
+        background-color: var(--primary-one);
+    }
+
+    .card-suvs {
+        background-color: var(--primary-second);
+    }
+
+    .card-luxury {
+        background-color: var(--primary-third);
+        border-radius: 0 1rem 1rem 0rem;
+    }
+}
